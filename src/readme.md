@@ -1,0 +1,1 @@
+Place all your original images in this folder
