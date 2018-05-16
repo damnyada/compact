@@ -11,7 +11,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
-    "imagemin-jpeg-recompress": "^5.1.0"
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.1.0",
+    "imagemin-zopfli": "^5.1.0"
   },
   "dependencies": {}
 }
