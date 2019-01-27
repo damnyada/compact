@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const plumber = require('gulp-plumber');
 const imagemin = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminPngquant = require('imagemin-pngquant');
@@ -6,6 +7,7 @@ const imageminZopfli = require('imagemin-zopfli');
 
 gulp.task('default', () =>
     gulp.src('src/**/*', {base: 'src'})
+        .pipe(plumber())
         .pipe(imagemin([
             imageminJpegRecompress({
                 loops:6,
